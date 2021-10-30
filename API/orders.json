@@ -16,7 +16,7 @@
             },
             "payment_details": {
                 "payment_method": "Paypal",
-                "billing address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
+                "billing_address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
             }
         },
         {
@@ -36,7 +36,7 @@
             },
             "payment_details": {
                 "payment_method": "Credit Card",
-                "billing address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
+                "billing_address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
             }
         },
         {
@@ -56,7 +56,7 @@
             },
             "payment_details": {
                 "payment_method": "Paypal",
-                "billing address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
+                "billing_address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
             }
         },
         {
@@ -76,7 +76,7 @@
             },
             "payment_details": {
                 "payment_method": "Paypal",
-                "billing address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
+                "billing_address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
             }
         },
         {
@@ -96,7 +96,7 @@
             },
             "payment_details": {
                 "payment_method": "Credit Card",
-                "billing address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
+                "billing_address": "1557 Red Bud Lane, Wallingford, CT, Connecticut, 06492"
             }
         }
     ]

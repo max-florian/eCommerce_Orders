@@ -3,7 +3,11 @@ const cors = require('cors');
 var bodyparser = require('body-parser');
 var jsonparser = bodyparser.json();
 
-const port = 8082;
+require('dotenv').config()
+
+const port = process.env['PORT'] || 8082;
+const ip = process.env['IP'] || "localhost";
+
 const app = express().use(cors())
 
 const { getOrder, getAll, getOrderDetails, getShipDetails, getPaymentDetails } = require('./functions');
@@ -48,5 +52,5 @@ app.get('/get_payment_details/:number', jsonparser, (req, res) => {
   });
 
 app.listen(port, () => {
-  console.log(`Aplicación corriendo en: http://localhost:${port}`)
+  console.log(`Aplicación corriendo en: http://${ip}:${port}`)
 })
