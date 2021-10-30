@@ -8,12 +8,14 @@ const app = express().use(cors())
 
 const { getOrder, getAll, getOrderDetails, getShipDetails, getPaymentDetails } = require('./functions');
 
+// Endpoint para obtener todas las ordenes.
 app.get('/all_orders', jsonparser, (req, res) => {
   let code = 200;
   let data = getAll();
   res.status(code).json(data);
   });
 
+// Endpoint para obtener una orden en especifico segun su numero de orden.
 app.get('/get_order/:number', jsonparser, (req, res) => {
     let code = 200;
     let number = req.params['number'];
@@ -21,6 +23,7 @@ app.get('/get_order/:number', jsonparser, (req, res) => {
     res.status(code).json(data);
   });
 
+// Endpoint para obtener los detalles de la orden de acuerdo a el numero de orden
 app.get('/get_order_details/:number', jsonparser, (req, res) => {
     let code = 200;
     let number = req.params['number'];
@@ -28,6 +31,7 @@ app.get('/get_order_details/:number', jsonparser, (req, res) => {
     res.status(code).json(data);
   });
 
+// Endpoint para obtener los detalles del envio de acuerdo a el numero de orden
 app.get('/get_ship_details/:number', jsonparser, (req, res) => {
     let code = 200;
     let number = req.params['number'];
@@ -35,6 +39,7 @@ app.get('/get_ship_details/:number', jsonparser, (req, res) => {
     res.status(code).json(data);
   });
 
+// Endpoint para obtener los detalles del pago de acuerdo a el numero de orden
 app.get('/get_payment_details/:number', jsonparser, (req, res) => {
     let code = 200;
     let number = req.params['number'];
