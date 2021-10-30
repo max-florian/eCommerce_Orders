@@ -2,3 +2,4 @@ requirements.txt
 API/node_modules
 APP/node_modules
 APP/config/config.js
+.env
