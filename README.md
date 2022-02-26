@@ -1,6 +1,6 @@
 # eCommerce_Orders
 
-A continuación adjunto screenshots de las distintas interfaces de la aplicación:
+A continuación se presenta un módulo sencillo de ordenes para una aplicación móvil de eCommerce:
 
 Pantalla principal:
 ![](images/menuprincipal.PNG)
